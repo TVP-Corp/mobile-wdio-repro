@@ -1,0 +1,87 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-native-a11y/all",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-native-a11y",
+    "react-native",
+    "react-hooks",
+    "import",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "browser": true,
+    "$": true,
+    "expect": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "project": true,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "curly": [2, "all"],
+    "global-require": "warn",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "import/prefer-default-export": "off",
+    "lines-between-class-members": "off",
+    "no-underscore-dangle": "off",
+    "no-console": "off",
+    "no-confusing-arrow": "off",
+    "import/no-cycle": "warn",
+    "import/no-absolute-path": "off",
+    "react/destructuring-assignment": "warn",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-curly-brace-presence": "warn",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "space-before-function-paren": "off",
+    "operator-linebreak": "off",
+    "react-native-a11y/has-accessibility-hint": "off",
+    "react-native-a11y/has-valid-accessibility-ignores-invert-colors": "off",
+    "prettier/prettier": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off",
+        "@typescript-eslint/no-use-before-define": ["error", {"functions": false, "variables": false, "classes": false}],
+        "react/function-component-definition": [
+          2,
+          {
+            "namedComponents": ["arrow-function", "function-declaration"],
+            "unnamedComponents": "arrow-function"
+          }
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

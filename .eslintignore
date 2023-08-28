@@ -1,0 +1,9 @@
+node_modules/**
+ios/**
+android/**
+.vscode/**
+**/*.js.snap
+**/*.ts*.snap
+/test/conf/*.js
+/test/conf/*.ts
+/test/output/**
