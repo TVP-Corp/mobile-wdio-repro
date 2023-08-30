@@ -5,6 +5,7 @@
   "scripts": {
     "adb:reverse": "adb reverse tcp:9900 tcp:9900",
     "android": "react-native run-android",
+    "android:apk": "cd android && ./gradlew assembleRelease && cd ../",
     "clean:all": "yarn clean:android && yarn clean:ios && yarn clean:javascript",
     "clean:android": "cd android && ./gradlew clean && cd ../",
     "clean:ios": "rm -rf ~/Library/Developer/Xcode/DerivedData && rm -rf ios/Pods",

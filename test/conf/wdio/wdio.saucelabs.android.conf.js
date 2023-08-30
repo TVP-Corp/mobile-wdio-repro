@@ -10,14 +10,14 @@ const config = {
       'appium:deviceName': 'Samsung Galaxy S10 WQHD GoogleAPI Emulator',
       'appium:platformVersion': process.env.PLATFORM_VERSION || '11.0',
       'appium:automationName': 'UiAutomator2',
-      'appium:app': `storage:filename=app-release-${process.env.TUNNEL_IDENTIFIER}.apk`,
+      'appium:app': 'storage:filename=app-release.apk',
       'appium:deviceOrientation': 'portrait',
       'appium:autoGrantPermissions': true,
       'appium:fullContextList': true,
       'appium:recordScreenshots': false,
       'cjson:metadata': {
         app: {
-          name: 'Baseline App',
+          name: 'MobileWdioRepro App',
           version: '0.0.0',
         },
         device: process.env.DEVICE || 'Samsung Galaxy S10 WQHD GoogleAPI Emulator',

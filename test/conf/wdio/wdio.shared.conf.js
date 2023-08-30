@@ -50,7 +50,7 @@ exports.config = {
       // The options
       {
         // Mandatory
-        baselineFolder: '.dist/image-compare/baseline',
+        baselineFolder: '.dist/image-compare/MobileWdioRepro',
         screenshotPath: '.dist/image-compare/screenshots',
         // Optional
         autoSaveBaseline: true,

@@ -14,7 +14,7 @@ const config = {
       'appium:deviceName': 'iPhone 13 Simulator',
       'appium:platformVersion': process.env.PLATFORM_VERSION || '15.5',
       'appium:automationName': 'XCUITest',
-      'appium:app': `storage:filename=ClsMobileBaseline-${process.env.TUNNEL_IDENTIFIER}.app.zip`,
+      'appium:app': `storage:filename=MobileWdioRepro.app.zip`,
       'appium:deviceOrientation': 'portrait',
       'appium:autoGrantPermissions': true,
       'appium:fullContextList': true,
@@ -28,7 +28,7 @@ const config = {
 
       'cjson:metadata': {
         app: {
-          name: 'Baseline App',
+          name: 'MobileWdioRepro App',
           version: '0.0.0',
         },
         device: process.env.DEVICE || 'iPhone 13 Simulator',
